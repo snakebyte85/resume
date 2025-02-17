@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "My resume in JSONResume format",
   "devDependencies": {
-    "jsonresume-theme-elegant": "1.16.1",
+    "jsonresume-theme-kendall": "0.2.0",
     "resume-cli": "3.1.2",
     "yamljs": "0.3.0"
   },
