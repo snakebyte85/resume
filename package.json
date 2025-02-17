@@ -1,14 +1,15 @@
 {
-  "name": "resume",
-  "version": "1.0.0",
-  "description": "My resume in JSONResume format",
-  "devDependencies": {
-    "jsonresume-theme-kendall": "0.2.0",
-    "resume-cli": "3.1.2",
-    "yamljs": "0.3.0"
-  },
-  "scripts": {
-      "resume": "npx resume"
-  }
+    "name": "resume",
+    "version": "1.0.0",
+    "description": "My resume in JSONResume format",
+    "devDependencies": {
+        "jsonresume-theme-kendall": "0.2.0",
+        "jsonresume-theme-paper-plus-plus": "0.5.1",
+        "resume-cli": "3.1.2",
+        "yamljs": "0.3.0"
+    },
+    "scripts": {
+        "resume": "npx resume"
+    }
     
 }

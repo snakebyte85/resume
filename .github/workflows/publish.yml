@@ -9,7 +9,8 @@ on:
   workflow_dispatch:
 
 env:
-  JSON_RESUME_THEME: kendall
+  JSON_RESUME_THEME_HTML: kendall
+  JSON_RESUME_THEME_PDF: paper-plus-plus
 
 jobs:
   check_run:
@@ -34,10 +35,10 @@ jobs:
         run: npx yaml2json resume.yaml > resume.json
       - name: Export resume as HTML
         id: export-html
-        run: npx resume export docs/index.html --theme ${JSON_RESUME_THEME}
+        run: npx resume export docs/index.html --theme ${JSON_RESUME_THEME_HTML}
       - name: Export resume as PDF
         id: export-pdf
-        run: RESUME_PUPPETEER_NO_SANDBOX=1 npx resume export resume.pdf --theme ${JSON_RESUME_THEME}
+        run: RESUME_PUPPETEER_NO_SANDBOX=1 npx resume export resume.pdf --theme ${JSON_RESUME_THEME_PDF}
       - name: Commit published HTML
         id: commit
         run: |
