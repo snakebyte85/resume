@@ -10,7 +10,6 @@ on:
 
 env:
   JSON_RESUME_THEME_HTML: kendall
-  JSON_RESUME_THEME_PDF: paper-plus-plus
 
 jobs:
   check_run:
@@ -27,18 +26,23 @@ jobs:
         id: date
         run: echo "::set-output name=date::$(date +'%Y%m%d')"
       - uses: actions/checkout@v2
+      - name: Add build info to resume.yaml
+        id: add-build-info-resume-yaml
+        uses: mikefarah/yq@master
+        with:
+          cmd: DATE=${{ steps.date.outputs.date }}  yq '(.. | select(tag == "!!str")) |= envsubst' resume.yaml > resume-working.yaml
       - name: NPM install
         id: npm-install
         run: npm install
       - name: Convert yaml to json
         id: yaml-to-js
-        run: npx yaml2json resume.yaml > resume.json
+        run: npx yaml2json resume-working.yaml > resume.json
       - name: Export resume as HTML
         id: export-html
         run: npx resume export docs/index.html --theme ${JSON_RESUME_THEME_HTML}
       - name: Export resume as PDF
         id: export-pdf
-        run: RESUME_PUPPETEER_NO_SANDBOX=1 npx resume export resume.pdf --theme ${JSON_RESUME_THEME_PDF}
+        run: RESUME_PUPPETEER_NO_SANDBOX=1 npx resume export resume.pdf
       - name: Commit published HTML
         id: commit
         run: |
@@ -46,7 +50,7 @@ jobs:
           git config --local user.name "GitHub Action"
           if [ -n "$(git status --porcelain docs/index.html)" ]; then
             git add docs/index.html
-            git commit -m "[ci skip] update resume page"
+            git commit -m "[ci skip] Release"
             echo ::set-output name=exit_code::0
           else
             echo ::set-output name=exit_code::1

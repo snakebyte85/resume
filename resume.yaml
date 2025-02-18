@@ -1,6 +1,6 @@
 basics:
   name: Valerio Spadaro
-  label: Senior DevOps Engineer
+  label: Senior DevOps Architect & Engineer
   image: "https://media.licdn.com/dms/image/v2/C5103AQFeBSZTd4AcUQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1516560532450?e=2147483647&v=beta&t=HfBCDwzZLVmbQGMMIeoaBXWJiSXUAp7nLXwHZjMt178"
   email: spadaro.valerio@gmail.com
   url: https://snakebyte85.github.io/resume/
@@ -30,11 +30,11 @@ basics:
       url: https://github.com/snakebyte85/
     - network: Linkedin
       url: https://www.linkedin.com/in/valeriospadaro/
-
-
+    - network: pdf
+      url: https://github.com/snakebyte85/resume/releases/download/${DATE}/vspadaro-${DATE}.pdf
 work:
-  - name: Cuebiq 
-    position: Senior DevOps Engineer
+  - name: Cuebiq
+    position: Senior DevOps Architect
     url: https://cuebiq.com/
     startDate: 2021-06-01
     summary: |
@@ -42,9 +42,132 @@ work:
       Introduzione e mantenimento del software ArgoCD per la parte di delivery e deploy del software in azienda, con migrazione da vecchio metodo tramite helmfile.
       Sviluppo e mantenimento di alcuni microservizi (Kotlin/Golang) della piattaforma
       Supporto ai colleghi sviluppatori per i tool interni.
+    highlights:
+      - Kubernetes
+      - Docker
+      - Helm
+      - Skaffold
+      - Travis
+      - Golang
+      - Kotlin
+      - Tekton
+      - ArgoCD
+  - name: Shared
+    position: Software Architect & Team Leader
+    startDate: 2018-01-01
+    endDate: 2021-05-31
+    summary: |
+      Impiegato sulla progettazione e conseguente ciclo di sviluppo e manutenzione di un prodotto che fa uso della tecnologia blockchain e dello standard BPMN per mezzo del motore di workflow Camunda.
+      Progettato e implementato l'intero ciclo DevOps relativo al prodotto.
+      Gestione di un paio di risorse (junior e senior) tramite assegnazione task e trasmissione di requisiti, linee guida e best practice.
+    highlights:
+      - Spring Boot
+      - Vagrant
+      - Ansible
+      - Liquibase
+      - Maven
+      - Jenkins
+      - Camunda
+      - Git
+      - Docker
+      - Kubernetes
+      - Helm
+      - OpenAPI
+  - name: Euris
+    position: Java Developer
+    url: https://www.euris.it
+    startDate: 2017-05-02
+    endDate: 2018-06-30
+    summary: |
+      Supporto per primo setup progetto di un mini gestionale in Angular/PHP
+    highlights:
+      - PHP
+      - Composer
+      - Angular 2
+      - Grunt
+      - NPM
+      - Git
+  - name: Net Service
+    position: Java Developer
+    url: https://www.netservice.eu/
+    startDate: 2015-09-02
+    endDate: 2017-05-01
+    summary: |
+      Impiegato nella realizzazione di un gestionale con l'utilizzo del motore di workflow Activiti come backend e il cms Liferay come frontend
 
-      Tecnologie usate: Kubernetes, Docker, Helm, Skaffold, Travis, Golang, Kotlin, Tekton, ArgoCD
+      Impiegato sullo sviluppo dell’intero stack (frontend e backend) e sul refactoring del software e del modello dati per l’implementazione di nuovi requisiti. Effettuato coordinamento di due risorse Junior e conseguente code review del lavoro svolto dagli stessi. Impiegato anche sulla gestione del processo di build e sviluppo del sistema di patching per permettere il delivery dell’applicazione nei sistemi di produzione.
 
+      Impiegato nella realizzazione di un resource adpater, secondo lo standard Java JCA, che wrappa il funzionamento di un driver CMIS già implementato dall’azienda Net Service e utilizzato per la comunicazione con il software documentale Alfresco.
+
+      Impiegato nelle prime sperimentazioni di utilizzo di Jenkins per introdurre sistemi di continous integration a livello aziendale.
+
+      Nell'ultima fase impiegato nel refactoring e mantenimento di alcune delle librerie interne aziendali, tra cui il modulo per gestire la comunicazione e l’interazione tra gli applicativi Net Service e il motore di workflow Activiti.
+    highlights:
+      - Maven
+      - Ant
+      - Spring
+      - Liferay
+      - Tomcat
+      - Activiti
+      - JQuery
+      - Hibernate
+      - JAX-WS
+      - Jenkins
+  - name: Reply
+    position: JEE Developer & Consultant
+    url: https://www.reply.com
+    startDate: 2014-11-01
+    endDate: 2015-09-01
+    summary: |
+      Consulenza presso l'Istituto Centrale per il Catalogo e la Documentazione (ICCD), ente facente parte del Ministero dei beni culturali. Allocato sul progetto SIGECweb, un’applicazione web utilizzata dai vari enti statali per la catalogazione del patrimonio culturale italiano, garantendo l’omogeneità delle informazioni che riguardano i beni culturali catalogati e presenti in Italia.
+
+      Impiegato su bug fixing e sviluppo di nuove funzionalità della parte backend e frontend dell'applicazione. Impiegato anche sul processo di build e delivery dell'applicazione, per garantirne la manutenzione e il miglioramento.
+
+      Impiegato per un breve periodo di tempo sulla parte di system integration dell'applicazione tramite webservice, allo scopo di abilitare il protocollo di sicurezza WS-Security sull'architettura implementativa JBossWS.
+    highlights:
+      - Maven
+      - Ant
+      - Spring
+      - Liferay
+      - Tomcat
+      - Activiti
+      - JQuery
+      - Hibernate
+      - JAX-WS
+      - Jenkins
+  - name: Reply
+    position: JEE Developer & Consultant
+    url: https://www.reply.com
+    startDate: 2014-11-01
+    endDate: 2015-09-01
+    summary: |
+      Consulenza presso l'Istituto Centrale per il Catalogo e la Documentazione (ICCD), ente facente parte del Ministero dei beni culturali. Allocato sul progetto SIGECweb, un’applicazione web utilizzata dai vari enti statali per la catalogazione del patrimonio culturale italiano, garantendo l’omogeneità delle informazioni che riguardano i beni culturali catalogati e presenti in Italia.
+
+      Impiegato su bug fixing e sviluppo di nuove funzionalità della parte backend e frontend dell'applicazione. Impiegato anche sul processo di build e delivery dell'applicazione, per garantirne la manutenzione e il miglioramento.
+
+      Impiegato per un breve periodo di tempo sulla parte di system integration dell'applicazione tramite webservice, allo scopo di abilitare il protocollo di sicurezza WS-Security sull'architettura implementativa JBossWS.
+    highlights:
+      - Maven
+      - Spring
+      - GWT
+      - Lucene
+  - name: ObjectWay
+    position: JEE Developer & Consultant
+    url: https://www.objectway.com/
+    startDate: 2014-11-01
+    endDate: 2015-09-01
+    summary: "Tirocinio presso azienda Objectway iTec, finalizzato all’apprendimento delle principali tecnologie Java/JEE. Formazione on the job su progetto Poste AG, per cliente Poste Italiane, per lo sviluppo e il mantenimento di un portale web atto a fornire funzionalità di interrogazione sulla banca dati di Poste alle agenzie giudiziarie italiane.\n\nConsulenza presso azienda HP Invent di Roma, allocato sul progetto DRAGON, un prodotto HP che permette l’archiviazione e l’interrogazione real-time dei dati riguardanti le telecomunicazioni,\nusato in Italia da Telecom e su scala internazionale da altri provider esteri.\n\nImpiegato per 2 mesi sulla rifattorizzazione della parte DAO di un modulo backend di Dragon, allo scopo di aggiungere Mysql tra i database applicativi supportati, in assenza di un framework ORM.\n\nImpiegato per 2 anni sul rifacimento completo di un modulo legacy che gestisce le richieste provenienti dal frontend indirizzandole su sistemi esterni o su database relazionali e non\n(Oracle, Mysql, Rainstor, Vertica, Teradata) tramite driver JDBC. Durante il periodo in questione impiegato su tutti gli aspetti dello sviluppo: bug fixing, sviluppo di nuove funzionalità, processo di\nbuild, test unitari e di integrazione, documentazione, analisi. Specializzato nell’utilizzo e testing di driver JDBC di terze parti, con particolare attenzione sulla conversione dei tipi di dati e sulla gestione delle date e fusi orari. \n\nImpiegato per 4 mesi su bug fixing di un modulo backend usato per il caricamento dei dati di traffico su database Oracle. Sviluppo di nuova funzionalità per la cancellazione dei suddetti dati dopo un periodo di tempo configurato.\n\nNell'ultimo periodo lavorativo impiegato sul modulo frontend di Dragon: bug fixing, rifattorizzazione delle pagine JSP introducendo l’utilizzo del framework javascript Dojo, sviluppo di nuove funzionalità, merge SVN per riportare fix o nuove funzionalità sviluppate da un ramo all’altro.\n"
+    highlights:
+      - Struts
+      - Hibernate
+      - JSP
+      - Maven
+      - EJB3
+      - JDBC
+      - Ant
+      - CDI
+      - JPA
+      - SVN
 education:
   - institution: Università degli Studi di Messina
     area: Scienze Informatiche
@@ -58,7 +181,6 @@ education:
     startDate: 1999-09-01
     endDate: 2004-06-30
     score: 94/100
-
 certificates:
   - name: Java SE 7 Programmer 1
     date: 2015-03-13
@@ -66,7 +188,6 @@ certificates:
   - name: First Certificate in English (B2)
     date: 2020-06-28
     issuer: Cambridge University Press & Assessment English
-
 skills:
   - name: DevOps
     level: Senior
@@ -90,16 +211,16 @@ skills:
       - Docker
       - Linux
       - NPM
-
   - name: Sviluppo in Golang
     level: Middle
     keywords:
-      - Cobra
+      - cobra
       - Goroutines & channels
-      - Testing
+      - Golang Testing
       - Go templating
-      - Rest
-
+      - survey
+      - gorilla/mux
+      - logrus
   - name: Sviluppo in Java
     level: Senior
     keywords:
@@ -117,7 +238,6 @@ skills:
       - Maven
       - Gradle
       - Ant
-
   - name: Sviluppo Frontend
     level: Middle
     keywords:
@@ -125,7 +245,6 @@ skills:
       - JQuery
       - CSS
       - HTML
-
   - name: Linux
     level: Senior
     keywords:
@@ -138,13 +257,12 @@ skills:
       - sshd
       - samba
       - Makefile
-
   - name: Altri linguaggi
     keywords:
       - Kotlin
       - Lua
       - Bash
-  
+      - Groovy
   - name: Altre conoscenze
     keywords:
       - AWS
@@ -155,19 +273,19 @@ skills:
       - OpenAPI
       - Android
       - Emacs
-  
   - name: Database
     level: Middle
     keywords:
-    - SQL
-    - JDBC
-    - Oracle
-    - MySql
-    - Postgres
-  
-  
+      - SQL
+      - JDBC
+      - Oracle
+      - MySql
+      - Postgres
 languages:
   - language: Italiano
     fluency: Nativo
   - language: Inglese
     fluency: Conoscenza lavorativa
+meta:
+  canonical: https://github.com/snakebyte85/resume/releases/latest
+  version: "${DATE}"
