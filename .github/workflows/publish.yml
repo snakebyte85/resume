@@ -69,6 +69,28 @@ jobs:
         uses: actions/upload-pages-artifact@v3 
         with:
           path: docs/
+      - name: Create new release
+        id: create-release
+        uses: shogo82148/actions-create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        with:
+          tag_name: ${{ steps.date.outputs.date }}
+          release_name: Release ${{ steps.date.outputs.date }}
+          body: New resume ${{ steps.date.outputs.date }}             
+          draft: false
+          prerelease: false
+          overwrite: true
+      - name: Upload Release resume PDF
+        id: upload-release-resume-pdf
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create-release.outputs.upload_url }}
+          asset_path: ./resume.pdf
+          asset_name: vspadaro-${{ steps.date.outputs.date }}.pdf
+          asset_content_type: application/pdf
 
   # Deployment job
   deploy:
@@ -84,25 +106,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-      - name: Create new release
-        id: create-release
-        uses: shogo82148/actions-create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
-        with:
-          tag_name: ${{ steps.date.outputs.date }}
-          release_name: Release ${{ needs.date.outputs.date }}
-          body: New resume ${{ needs.date.outputs.date }}             
-          draft: false
-          prerelease: false
-          overwrite: true
-      - name: Upload Release resume PDF
-        id: upload-release-resume-pdf
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create-release.outputs.upload_url }}
-          asset_path: ./resume.pdf
-          asset_name: vspadaro-${{ needs.date.outputs.date }}.pdf
-          asset_content_type: application/pdf
+
