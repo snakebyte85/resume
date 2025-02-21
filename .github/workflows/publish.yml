@@ -10,7 +10,7 @@ on:
 
 env:
   JSON_RESUME_THEME_HTML: kendall
-  JSON_RESUME_THEMNE_PDF: onepage-plus
+  JSON_RESUME_THEME_PDF: onepage-plus
 
 jobs:
   check_run:
