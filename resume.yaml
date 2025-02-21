@@ -19,7 +19,7 @@ basics:
 
     Sono iscritto alle categorie protette con percentuale riconosciuta di invalidità civile del 60%. E’ garantita la completa mobilità.
 
-    Lavoro attualmente in full remote working e attualmente non sono interessato a lavori che non obbligano la mia presenza fisica a più di una volta al mese
+    Lavoro attualmente in full remote working e attualmente non sono interessato a lavori che obbligano la mia presenza fisica a più di un paio di volte al mese
   location:
     city: Bologna
     countryCode: IT
@@ -38,20 +38,28 @@ work:
     url: https://cuebiq.com/
     startDate: 2021-06-01
     summary: |
-      Sviluppo, gestione e manutenzione del ciclo Devops in azienda.
+      Sviluppo, gestione e manutenzione del ciclo DevOps in azienda.
+      Gestione configurazione progetti su Github e manutenzione delle relative pipeline di build Travis.
+      Sperimentazione nell'uso di Tekton, sviluppando delle pipeline in grado di impacchettare e rilasciare chart Helm e immagini Docker partendo da commit su Github.
       Introduzione e mantenimento del software ArgoCD per la parte di delivery e deploy del software in azienda, con migrazione da vecchio metodo tramite helmfile.
-      Sviluppo e mantenimento di alcuni microservizi (Kotlin/Golang) della piattaforma
-      Supporto ai colleghi sviluppatori per i tool interni.
+      Sviluppo e mantenimento di microservizio in Golang allo scopo di gestire l'integrazione tra la piattaforma sviluppata dall'azienda e ArgoCD per creare un applicativo PaaS (Platform as a Service), con creazione automatica delle risorse su cluster kubernetes alla creazione di nuovi tenant e installazione/disinstallazione risorse kubernetes su richiesta dell'utente tramite dashboard di configurazione su UI.
+      Supporto ai colleghi sviluppatori per i tool usati nel ciclo di build e deploy (sia esterni come Helm, Skaffold ecc..., sia interni come la CLI aziendale).
+      Sviluppo e manutenzione di nuove evolutive della CLI aziendale, usata per automatizzare il rilascio di nuove versioni dei microservizi come immagini Docker e relativi chart Helm e il deploy degli stessi tramite ArgoCD.
+      Esperienza da junior su piattaforma AWS e alcune sue componenti: S3, RDS, IAM, Route 53, EKS.
     highlights:
       - Kubernetes
       - Docker
       - Helm
+      - Helmfile
       - Skaffold
       - Travis
       - Golang
       - Kotlin
       - Tekton
       - ArgoCD
+      - Github
+      - Git
+      - AWS
   - name: Shared
     position: Software Architect & Team Leader
     startDate: 2018-01-01
@@ -241,6 +249,8 @@ skills:
   - name: Sviluppo Frontend
     level: Middle
     keywords:
+      - Node
+      - NPM
       - Javascript
       - JQuery
       - CSS
@@ -286,6 +296,26 @@ languages:
     fluency: Nativo
   - language: Inglese
     fluency: Conoscenza lavorativa
+interests:
+  - name: Videogiochi
+    keywords:
+      - Retrogame
+      - Indie
+      - Simulatori di volo
+  - name: Sviluppo videogiochi
+    keywords:
+      - Unity
+      - Pico-8
+      - Picotron
+      - Libgdx
+  - name: Linux
+      - Emacs
+      - Arch
+      - CLI
+      - Raspberry
+  - name: Film
+
 meta:
+  language: it
   canonical: https://github.com/snakebyte85/resume/releases/latest
   version: "${DATE}"
