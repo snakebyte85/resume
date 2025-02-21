@@ -45,7 +45,7 @@ jobs:
         id: export-pdf
         run: |
           npx resume export resume.pdf.html --theme ${JSON_RESUME_THEME_PDF}
-          RESUME_PUPPETEER_NO_SANDBOX=1 npx puppeteer print resume.pdf.html resume.pdf --format A4 --margin-top 10mm
+          npx puppeteer print resume.pdf.html resume.pdf --format A4 --margin-top 10mm --sandbox=false
       - name: Commit published HTML
         id: commit
         run: |
