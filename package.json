@@ -4,7 +4,9 @@
     "description": "My resume in JSONResume format",
     "devDependencies": {
         "jsonresume-theme-kendall": "0.2.0",
+        "jsonresume-theme-onepage-plus": "1.0.1",
         "resume-cli": "3.1.2",
+        "puppeteer-cli" : "1.5.1",
         "yamljs": "0.3.0"
     },
     "scripts": {

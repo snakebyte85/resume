@@ -10,6 +10,7 @@ on:
 
 env:
   JSON_RESUME_THEME_HTML: kendall
+  JSON_RESUME_THEMNE_PDF: onepage-plus
 
 jobs:
   check_run:
@@ -42,7 +43,9 @@ jobs:
         run: npx resume export docs/index.html --theme ${JSON_RESUME_THEME_HTML}
       - name: Export resume as PDF
         id: export-pdf
-        run: RESUME_PUPPETEER_NO_SANDBOX=1 npx resume export resume.pdf
+        run: |
+          npx resume export resume.pdf.html --theme ${JSON_RESUME_THEME_PDF}
+          RESUME_PUPPETEER_NO_SANDBOX=1 npx puppeteer print resume.pdf.html resume.pdf --format A4 --margin-top 10mm
       - name: Commit published HTML
         id: commit
         run: |
