@@ -134,28 +134,6 @@ work:
       Impiegato per un breve periodo di tempo sulla parte di system integration dell'applicazione tramite webservice, allo scopo di abilitare il protocollo di sicurezza WS-Security sull'architettura implementativa JBossWS.
     highlights:
       - Maven
-      - Ant
-      - Spring
-      - Liferay
-      - Tomcat
-      - Activiti
-      - JQuery
-      - Hibernate
-      - JAX-WS
-      - Jenkins
-  - name: Reply
-    position: JEE Developer & Consultant
-    url: https://www.reply.com
-    startDate: 2014-11
-    endDate: 2015-09
-    summary: |
-      Consulenza presso l'Istituto Centrale per il Catalogo e la Documentazione (ICCD), ente facente parte del Ministero dei beni culturali. Allocato sul progetto SIGECweb, un’applicazione web utilizzata dai vari enti statali per la catalogazione del patrimonio culturale italiano, garantendo l’omogeneità delle informazioni che riguardano i beni culturali catalogati e presenti in Italia.
-
-      Impiegato su bug fixing e sviluppo di nuove funzionalità della parte backend e frontend dell'applicazione. Impiegato anche sul processo di build e delivery dell'applicazione, per garantirne la manutenzione e il miglioramento.
-
-      Impiegato per un breve periodo di tempo sulla parte di system integration dell'applicazione tramite webservice, allo scopo di abilitare il protocollo di sicurezza WS-Security sull'architettura implementativa JBossWS.
-    highlights:
-      - Maven
       - Spring
       - GWT
       - Lucene
