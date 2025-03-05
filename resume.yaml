@@ -25,6 +25,8 @@ basics:
     countryCode: IT
     region: Emilia Romagna
   profiles:
+    - network: jsonresume
+      url: https://snakebyte85.github.io/resume/
     - network: Github
       username: snakebyte85
       url: https://github.com/snakebyte85/
